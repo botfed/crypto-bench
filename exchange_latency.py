@@ -21,7 +21,7 @@ ENDPOINTS = [
     ("Bybit",        "https://api.bybit.com/v5/market/time",   "bybit",       30.0),
     ("OKX",          "https://www.okx.com/api/v5/public/time", "okx",          8.0),
     ("Hyperliquid",  "https://api.hyperliquid.xyz/info",       "hyperliquid", 30.0),
-    ("RiseX",        "https://api.rise.trade/client",          "risex",       30.0),
+    ("RiseX",        "https://api.rise.trade/v1/system/config", "risex",       30.0),
     ("HotStuff",     "https://api.hotstuff.trade/",            "hotstuff",    30.0),
     ("ZeroOne",      "https://zo-mainnet.n1.xyz/timestamp",    "zeroone",     30.0),
 ]
