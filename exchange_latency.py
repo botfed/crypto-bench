@@ -82,8 +82,9 @@ def measure_hyperliquid(url):
 
 
 def measure_risex(url):
+    req = urllib.request.Request(url, headers={"User-Agent": "crypto-bench/1.0"})
     t0 = time.monotonic()
-    with urllib.request.urlopen(url, timeout=TIMEOUT) as r:
+    with urllib.request.urlopen(req, timeout=TIMEOUT) as r:
         r.read()
     rtt_us = (time.monotonic() - t0) * 1e6
     return rtt_us / 2.0, 0.0
